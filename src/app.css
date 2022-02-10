@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+#sidebar a {
+    @apply underline decoration-dotted underline-offset-4 decoration-blue-200 decoration-1 hover:decoration-blue-600 transition-all duration-150;
+}
+
+a {
+    @apply underline underline-offset-1 decoration-blue-300 decoration-2 hover:decoration-blue-500 transition-all duration-150 after:content-['_↗'] after:text-xs;
+}
+
 .section-headline {
     @apply font-bold sm:text-xl uppercase tracking-widest border-blue-400 border-l-8 pl-2;
 }
